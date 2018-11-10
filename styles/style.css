@@ -27,7 +27,7 @@ body {
     margin-bottom: 0;
     font-size: 2.8rem;
     font-weight: 600;
-    color: #585858;
+    color: #383838;
 }
 .header__subtitle {
     font-size: 1.4rem;
@@ -122,19 +122,41 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     background-color: #f9f9f9;
-    padding-top: 0.1rem;
-    padding-bottom: .1rem;
+    padding: 2rem 2.4rem;
+}
+.add__form {
+    margin-bottom: 0;
 }
 
-.add__task {
-    margin-top: 3rem;
+.add__form--inputs {
+    display: flex;
 }
-#add__task--field {
-    width: 100%;
+
+input {
+    height: 46px !important;
+}
+
+#add__task--info {
     padding: 2.2rem 1rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border: transparent;
     font-size: 1.4rem;
+    flex: 1;
+    margin-right: 1rem;
+    border-radius: 5px;
+
+}
+
+#add__task--date {
+    width: 30rem;
+    padding: 2.2rem 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: transparent;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    font-family: inherit;
+    color: #696969;
+    height: 3px !important;
 }
 
 .add__task--btn {
@@ -148,6 +170,7 @@ body {
     padding: 4px 30px;
     transition: all 150ms ease-in-out;
     transform: scale(1);
+    margin-bottom: 0;
 }
 .add__task--btn:focus {
     color: #fff;
