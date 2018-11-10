@@ -5,9 +5,16 @@ body {
     font-size: 62.5%;
 }
 
+.main__header {
+    text-align: center;
+    font-weight: 600;
+    color: #383838 !important;
+    margin: 4rem 0;
+}   
+
 .container {
     /* max-width: 60rem; */
-    margin-top: 10rem;
+    margin-top: 8rem;
     /* border: 1px solid black; */
     
     border-radius: 5px;
@@ -31,7 +38,7 @@ body {
 }
 .header__subtitle {
     font-size: 1.4rem;
-    color: #b5b6b5;
+    color: #A0A0A0;
 }
 
 .header__img {
@@ -70,7 +77,13 @@ body {
     margin-bottom: 1rem;
     font-size: 1.6rem;
     line-height: 2rem;
+    transition: all 200ms;
 }
+
+.task__title.checked {
+    text-decoration: line-through;
+}
+
 
 .task__subtitle {
     font-size: 1.3rem;
@@ -148,7 +161,7 @@ input {
 }
 
 #add__task--date {
-    width: 30rem;
+    max-width: 20rem;
     padding: 2.2rem 1rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border: transparent;

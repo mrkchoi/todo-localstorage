@@ -19,13 +19,18 @@
     <title>Get Shit Done!</title>
 </head>
 <body>
+        <!-- <h1 class="main__header">
+            Task List
+        </h1> -->
+    </div>
     <div class="container">
+        
         <!-- Header -->
         <div class="header">
             <div class="header__content">
-                <h2 class="header__title">Hello there <span class="header__title--name">Kenny</span></h2>
+                <h2 class="header__title">Hello there<span class="header__title--name"></span>!</h2>
                 <p class="header__subtitle">You have 
-                    <span class="header__subtitle--number">3</span> 
+                    <span class="header__subtitle--number">no</span> 
                     tasks</p>
             </div>
             <div class="header__img">
@@ -36,12 +41,12 @@
         <div class="task__list">
             <div class="task__item">
                 <div class="task__content">
-                    <h5 class="task__title">Get shit done!</h5>
+                    <h5 class="task__title">Enter a task below</h5>
                     <p class="task__subtitle">Due Fri Nov 9</p>
                 </div>
                 <div class="task__checkbox--wrapper">
                     <form class="task__form">
-                        <input class="task__checkbox" type="checkbox" data-task=0>
+                        <input class="task__checkbox" type="checkbox" data-index=0>
                     </form>
                 </div>
             </div>
@@ -76,7 +81,7 @@
         <div class="add__task">
             <form class="add__form">
                 <div class="add__form--inputs">
-                    <input type="text" id="add__task--info" placeholder="Add a task...">
+                    <input type="text" id="add__task--info" placeholder="Add a task..." required>
                     <input type="date" id="add__task--date" placeholder="Add a task...">
                 </div>
                 <button class="add__task--btn" type="submit">Add Task</button>
