@@ -38,7 +38,21 @@ body {
 }
 .header__subtitle {
     font-size: 1.4rem;
-    color: #A0A0A0;
+    color: #BEBEBE;
+}
+
+.header__login {
+    font-size: 1.2rem;
+    color: #E0E0E0;
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    transform: all 200ms;
+}
+
+.header__login:hover,
+.header__login:active {
+    color: #287fee;
 }
 
 .header__img {

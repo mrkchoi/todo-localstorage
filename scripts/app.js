@@ -8,6 +8,7 @@ let inputInfo = document.querySelector('#add__task--info');
 let inputDate = document.querySelector('#add__task--date');
 let inputInfoDue = document.querySelector('.task__subtitle--due');
 let taskTitle = document.querySelectorAll('.task__title');
+let login = document.querySelector('.header__login');
 
 // Task counter
 let taskCount = document.querySelector('.header__subtitle--number');
@@ -17,12 +18,17 @@ let tasks = document.querySelector('.task__list');
 let taskList = JSON.parse(localStorage.getItem('tasks')) || [];
 
 
-// // Show users name in header
+// Show users name in header
+function getName() {
     if(!localStorage.getItem('name')) {
         // Name prompt
         let namePrompt = prompt("Please enter your name...");
-        userName.textContent = ` ${namePrompt}`;
-
+        if(namePrompt === null) {
+            return;
+        } else {
+            userName.textContent = ` ${namePrompt}`;
+        }
+        
         // Name input prompt only if no local storage value
         if(namePrompt !== '') {
             localStorage.setItem('name', JSON.stringify(namePrompt));
@@ -32,9 +38,13 @@ let taskList = JSON.parse(localStorage.getItem('tasks')) || [];
         let namePrompt = JSON.parse(localStorage.getItem('name'));
         userName.textContent = ` ${namePrompt}`;
     }
+}
+getName();
 
+// Reset user
+login.addEventListener('click', removeUser);
+// Update DOM on page load
 window.addEventListener('DOMContentLoaded', populateTasks);
-
 // Form event listener
 inputForm.addEventListener('submit', newTask);
 // Task list delete event listener
@@ -121,6 +131,12 @@ function deleteTask(e) {
 }
 
 
+function removeUser() {
+    if(localStorage.getItem('name')) {
+        localStorage.removeItem('name');
+    }
+    getName();
+}
 
 // Fix map error
 
