@@ -16,10 +16,71 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>Get Shit Done!</title>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header__content">
+                <h2 class="header__title">Hello there <span class="header__title--name">Kenny</span>!</h2>
+                <p class="header__subtitle">You have 
+                    <span class="header__subtitle--number">3</span> 
+                    tasks</p>
+            </div>
+            <div class="header__img">
+            </div>
+        </div>
+
+        <!-- List -->
+        <div class="task__list">
+            <div class="task__item">
+                <div class="task__content">
+                    <h5 class="task__title">Get shit done! Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                    <p class="task__subtitle">Due Fri Aug 8</p>
+                </div>
+                <div class="task__checkbox--wrapper">
+                    <form class="task__form">
+                        <input class="task__checkbox" type="checkbox" data-task=0>
+                    </form>
+                </div>
+            </div>
+            <div class="task__item">
+                <div class="task__content">
+                    <h5 class="task__title">Awww yeeeeeaaaa! Et sint explicabo! adipisicing elit.</h5>
+                    <p class="task__subtitle">Due Fri Aug 8</p>
+                </div>
+                <div class="task__checkbox--wrapper">
+                    <form class="task__form">
+                        <input class="task__checkbox" type="checkbox" data-task=0>
+                    </form>
+                </div>
+            </div>
+            <div class="task__item">
+                <div class="task__content">
+                    <h5 class="task__title">Hipster ipsum dolor sit amet consectetur</h5>
+                    <p class="task__subtitle">Due Fri Aug 8</p>
+                </div>
+                <div class="task__checkbox--wrapper">
+                    <form class="task__form">
+                        <input class="task__checkbox" type="checkbox" data-task=0>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- <hr /> -->
+    <div class="container container__addtask">
+        <!-- Add Task Button -->
+        <div class="add__task">
+            <form class="add__form">
+                <input type="text" id="add__task--field" placeholder="Add a task...">
+                <button class="add__task--btn" type="submit">Add Task</button>
+            </form>
+        </div>
+
+    </div>
 
 
 

@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.container {
+    /* max-width: 60rem; */
+    margin-top: 10rem;
+    /* border: 1px solid black; */
+    
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    padding: 4rem 2.4rem 1.4rem;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.4rem 0;
+}
+.header__title {
+    margin-bottom: 0;
+    font-size: 2.8rem;
+}
+.header__subtitle {
+    font-size: 1.4rem;
+    color: #b5b6b5;
+}
+
+.header__img {
+    background-color: orangered;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: url(../assets/lolcats-final.jpg);
+    background-size: cover;
+}
+
+
+/* Task List */
+.task__item {
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 150ms ease-in-out;
+}
+.task__item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.task__content {
+    margin: 0.5rem 0;
+    flex: 1;
+}
+.task__title {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.task__subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    margin-top: .4rem;
+    color: #848388;
+}
+
+.task__checkbox--wrapper {
+    width: 3rem;
+    margin-left: 2.5rem;
+}
+
+.task__checkbox--wrapper:hover {
+    cursor: pointer;
+}
+
+.task__form {
+    margin-bottom: 0;
+}
+.task__form:hover {
+    cursor: pointer;
+}
+
+.task__checkbox {
+    margin-bottom: 0;
+    width: 3rem;
+    height: 3rem;
+    /* -webkit-appearance: none;
+    border: 1px solid #848388;
+    width: 15px;
+    height: 15px;
+    display: inline-block !important;
+    border-radius: 5px; */
+}
+
+/* .task__checkbox:checked {
+    content: '\&#10004;';
+} */
+
+.task__checkbox:hover {
+    cursor: pointer;
+}
+
+/* Add Task */
+
+.container__addtask {
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    padding-top: 0.1rem;
+    padding-bottom: .1rem;
+}
+
+.add__task {
+    margin-top: 3rem;
+}
+#add__task--field {
+    width: 100%;
+    padding: 2.2rem 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: transparent;
+    font-size: 1.4rem;
+}
+
+.add__task--btn {
+    background-color: orangered;
+    color: #fff;
+    font-weight: 900;
+    border: transparent;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 100%;
+    height: initial;
+    padding: 4px 30px;
+    transition: all 150ms ease-in-out;
+    transform: scale(1);
+}
+.add__task--btn:focus {
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.add__task--btn:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+.add__task--btn:active {
+    box-shadow: 0 3px 2px rgba(0,0,0,0.2);
+    color: #fff;
+}
